@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+<body>
+{% block content %}
+<h1 align="center"> Employee Form </h1>
+
+<table border="2px solid black" align="center">
+
+    <th>Name</th>
+    <th>Mobile</th>
+    <th>Address</th>
+
+
+{% for data in emp_data %}
+
+    <tr>
+        <td> {{ data.name }} </td>
+        <td> {{ data.mobile }} </td>
+        <td> {{ data.address }} </td>
+    </tr>
+
+{% endfor %}
+
+</table>
+
+{% endblock content %}
+</body>
